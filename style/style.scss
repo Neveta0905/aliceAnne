@@ -1,0 +1,142 @@
+$colorMain:#DBAD52;
+body{
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+button{
+    cursor: pointer;
+}
+img{
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+    aspect-ratio: 1/1;
+    min-width: 0;
+    display: block;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+header{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 40px;
+
+    #logo{
+        position: absolute;
+        left: 20%;
+        width: 200px;
+        height: auto;
+    }
+    nav{
+        width: 60%;
+        z-index: 99999;
+        margin-left: auto;
+        ul{
+            justify-content: space-around;
+            user-select: none;
+            cursor: pointer;
+            padding: 0;
+            li{
+                width: 0px;
+                font-size: 18px;
+                &:hover{
+                    font-weight: bold;
+                }
+                margin: 0;
+            }
+        }
+    }
+}
+
+.topPage{
+    padding: clamp(8px,3vw,40px);
+    padding-bottom: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+    main{
+        display: flex;
+        flex: 1;
+        h1{
+            color:$colorMain;
+            font-size: 60px;
+            text-align: center;
+        }
+    }
+}
+
+button{
+    background-color:$colorMain;
+    padding: 10px;
+    font-size: 24px;
+    color: white;
+    border: none;
+    width: 300px;
+    margin-left: 50px;
+}
+
+
+.leftPart{
+    width: 50%;
+    padding: clamp(20px,10vw,100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .description{
+        font-size: 24px;
+    }
+}
+
+.rightPart{
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 0;
+
+    .leftPhoto{
+        width: 50%;
+    }
+    &.photos{
+        min-width: 600px;
+        img{
+            object-fit: cover;
+        }
+    }
+
+    div{
+        margin-left: 10px;
+        width: 50%;
+        height: 100%;
+        img{
+            height: calc(50% - 5px);
+            aspect-ratio: 0;
+            &:nth-child(1){
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+footer{
+    height: 30px;
+    width: 100%;
+    background-color:$colorMain;
+    margin-top: 20px;
+    
+}
