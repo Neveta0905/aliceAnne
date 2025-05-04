@@ -12,6 +12,13 @@ body {
 
 button {
   cursor: pointer;
+  background-color: #DBAD52;
+  padding: 10px;
+  font-size: 24px;
+  color: white;
+  border: none;
+  width: 300px;
+  margin-left: 50px;
 }
 
 img {
@@ -28,21 +35,22 @@ ul {
   display: flex;
 }
 
+#logo {
+  position: absolute;
+  top: clamp(8px, 1vw, 20px);
+  left: clamp(8px, 4vw, 200px);
+  width: 200px;
+  height: auto;
+}
+
 header {
   display: flex;
-  justify-content: end;
   width: 100%;
   justify-content: space-between;
   margin-bottom: 40px;
 }
-header #logo {
-  position: absolute;
-  left: 20%;
-  width: 200px;
-  height: auto;
-}
 header nav {
-  width: 60%;
+  width: auto;
   z-index: 99999;
   margin-left: auto;
 }
@@ -53,11 +61,11 @@ header nav ul {
           user-select: none;
   cursor: pointer;
   padding: 0;
+  margin: 0;
 }
 header nav ul li {
-  width: 0px;
   font-size: 18px;
-  margin: 0;
+  margin-left: 10px;
 }
 header nav ul li:hover {
   font-weight: bold;
@@ -66,68 +74,77 @@ header nav ul li:hover {
 .topPage {
   padding: clamp(8px, 3vw, 40px);
   padding-bottom: 0;
-  flex: 1;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
 }
 .topPage main {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   flex: 1;
+  gap: 10px;
 }
 .topPage main h1 {
   color: #DBAD52;
   font-size: 60px;
   text-align: center;
 }
-
-button {
-  background-color: #DBAD52;
-  padding: 10px;
-  font-size: 24px;
-  color: white;
-  border: none;
-  width: 300px;
-  margin-left: 50px;
+@media screen and (max-width: 680px) {
+  .topPage main h1 {
+    text-align: end;
+  }
 }
 
-.leftPart {
-  width: 50%;
-  padding: clamp(20px, 10vw, 100px);
+.description {
+  padding: clamp(8px, 3vw, 50px);
+  padding-top: clamp(73px, 10vw, 100px);
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex: 300px;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
 }
-.leftPart .description {
-  font-size: 24px;
+@media screen and (max-width: 920px) {
+  .description {
+    padding-top: 0px;
+  }
+}
+.description * {
+  margin: 0px;
+}
+.description .presentation {
+  text-align: center;
 }
 
-.rightPart {
-  max-width: 50%;
+.photos {
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  flex: 500px;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 0;
 }
-.rightPart .leftPhoto {
-  width: 50%;
+.photos .leftPhoto {
+  flex: 1;
 }
-.rightPart.photos {
-  min-width: 600px;
-}
-.rightPart.photos img {
+.photos img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.rightPart div {
+.photos div {
   margin-left: 10px;
-  width: 50%;
+  flex: 1;
   height: 100%;
 }
-.rightPart div img {
+.photos div img {
   height: calc(50% - 5px);
   aspect-ratio: 0;
 }
-.rightPart div img:nth-child(1) {
+.photos div img:nth-child(1) {
   margin-bottom: 10px;
 }
 
@@ -136,4 +153,22 @@ footer {
   width: 100%;
   background-color: #DBAD52;
   margin-top: 20px;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    margin-bottom: 0;
+  }
+  .topPage main h1 {
+    font-size: 40px;
+  }
+  #logoTitle {
+    display: flex;
+  }
+  #logoTitle #logo {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
