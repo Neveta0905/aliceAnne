@@ -1,0 +1,99 @@
+.arrow {
+  font-size: 40px;
+  width: 49px;
+  position: absolute;
+  cursor: pointer;
+  z-index: 999;
+  user-select: none;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: rgba(31, 24, 1, 0.8);
+  border-radius: 9999px;
+  text-align: center;
+  top: 40%;
+}
+
+.left {
+  margin-left: 8px;
+}
+
+.right {
+  right: 0;
+  margin-right: 8px;
+}
+
+.photos {
+  position: relative;
+}
+.photos #carousel {
+  transition: 500ms;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+header #logo {
+  margin: auto;
+  width: 200.3px;
+  height: 65.4px;
+  object-fit: cover;
+  object-position: 0 -33px;
+}
+header nav {
+  flex: 1;
+  padding: 10px 8px 0 8px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav ul li {
+  font-family: "Lucida Sans";
+  font-size: calc(0.6rem + 0.9vw);
+}
+header nav ul li:hover {
+  font-weight: bold;
+}
+
+main {
+  min-height: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+main h1 {
+  display: none;
+}
+main .description {
+  font-size: calc(1rem + 1.2vw);
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+main .description .presentation {
+  padding: 8px;
+  text-align: justify;
+}
+main .description button {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main .photos {
+  margin: auto;
+}
+main .photos #carousel {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+main .photos .photosGroup {
+  display: contents;
+}
+main .photos img {
+  object-fit: cover;
+  flex-shrink: 0;
+}/*# sourceMappingURL=phone.css.map */

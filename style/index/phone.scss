@@ -1,0 +1,79 @@
+@import '../caroussel';
+header{
+    display: flex;
+    flex-direction: column;
+
+    #logo{
+        margin: auto;
+        width: 200.3px;
+        height: 65.4px;
+        object-fit: cover;
+        object-position: 0 -33px;
+    }
+
+    nav{
+        flex: 1;
+        padding: 10px 8px 0 8px;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            li{
+                font-family: 'Lucida Sans';
+                font-size: calc(0.6rem + 0.9vw);
+
+                &:hover{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+main{
+    min-height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    h1{
+        display: none;
+    }
+
+    .description{
+        font-size: calc(1rem + 1.2vw);
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+
+        .presentation{
+            padding: 8px;
+            text-align: justify;
+        }
+        button{
+            margin-top: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .photos{
+        margin: auto;
+        
+        #carousel{
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+
+        .photosGroup{
+            display: contents;
+        }
+        img{
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+    }
+}

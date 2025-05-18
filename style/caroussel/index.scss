@@ -1,0 +1,27 @@
+.arrow{
+    font-size: 40px;
+    width: 49px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 999;
+    user-select: none;
+    background-color: rgba($color: white, $alpha: 0.7);
+    color: rgba(31, 24, 1,0.8);
+    border-radius: 9999px;
+    text-align: center;
+    top: 40%;
+}
+
+.left{
+    margin-left: 8px;
+}
+.right{
+    right: 0;
+    margin-right: 8px;
+}
+.photos{
+    position: relative;
+    #carousel{
+        transition: 500ms;
+    }
+}
