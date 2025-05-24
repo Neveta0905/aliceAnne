@@ -69,8 +69,8 @@
                 otherButton.classList.toggle("active")
                 elem.classList.toggle("active")
 
-                otherButton.toggleAttribute("disabled")
-                elem.toggleAttribute("disabled")
+                otherButton.removeAttribute("disabled")
+                elem.setAttribute("disabled","")
 
                 const frontImg = elem.parentElement.nextElementSibling
                 frontImg.classList.toggle("flipped")
