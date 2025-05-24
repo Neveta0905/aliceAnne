@@ -25,13 +25,14 @@ body {
   flex-direction: column;
 }
 
-button {
+.mainCTA {
   background-color: #DBAD52;
   width: 80%;
   border: none;
   font-size: 30px;
   padding: 30px;
   color: white;
+  cursor: pointer;
 }
 
 footer {

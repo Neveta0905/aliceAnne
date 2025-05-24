@@ -31,6 +31,7 @@
 header {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 }
 header #logo {
   margin: auto;
@@ -75,7 +76,7 @@ main .description {
 }
 main .description .presentation {
   padding: 8px;
-  text-align: justify;
+  text-align: center;
 }
 main .description button {
   margin-top: 15px;
@@ -88,7 +89,6 @@ main .photos {
 main .photos #carousel {
   display: flex;
   flex-direction: row;
-  flex: 1;
 }
 main .photos .photosGroup {
   display: contents;
@@ -96,4 +96,8 @@ main .photos .photosGroup {
 main .photos img {
   object-fit: cover;
   flex-shrink: 0;
+}
+main .photos .photoCard {
+  flex-shrink: 0;
+  max-width: 100%;
 }/*# sourceMappingURL=phone.css.map */
