@@ -23,7 +23,13 @@
 
 .photos {
   position: relative;
+  flex: 1;
 }
 .photos #carousel {
   transition: 500ms;
+  height: 100%;
+  flex: 1;
+}
+.photos #carousel img {
+  height: 100%;
 }/*# sourceMappingURL=index.css.map */

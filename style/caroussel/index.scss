@@ -21,7 +21,13 @@
 }
 .photos{
     position: relative;
+    flex: 1;
     #carousel{
         transition: 500ms;
+        height: 100%;
+        flex: 1;
+        img{
+            height: 100%;
+        }
     }
 }
