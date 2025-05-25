@@ -8,6 +8,11 @@ img{
     height: auto;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
 ul,ol {
     list-style: none;
     user-select: none;
@@ -21,12 +26,16 @@ ul,ol {
 }
 
 body{
-    max-width: 100%;
-    overflow: hidden;
     height: 100vh;
     height: 100dvh;
-    display: flex;
-    flex-direction: column;
+
+    #app{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-grow: 0;
+        flex-direction: column;
+    }
 }
 
 
