@@ -25,21 +25,6 @@ ul,ol {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body{
-    height: 100vh;
-    height: 100dvh;
-    overflow: hidden;
-
-    #app{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-grow: 0;
-        flex-direction: column;
-    }
-}
-
-
 .mainCTA{
     background-color: $colorMain;
     width: 80%;
@@ -61,14 +46,6 @@ footer{
     font-weight: bold;
 }
 
-@media (min-width: 768px) {
-    *{
-        background-color: yellow;
-    }
-}
-
-@media (min-width: 1024px) {
-    *{
-        background-color: red;
-    }
+h1{
+    color: #DBAD52;
 }

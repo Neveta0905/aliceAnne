@@ -40,18 +40,8 @@
                         <img src="./images/cuisineOxyAfter.jpg" alt="" draggable="false">
                         <img src="./images/cuisineOxyBefore.jpg" alt="" draggable="false">
                     </div>
-                    <div class="photoCard">
-                        <div class="buttons">
-                            <button class="flipButton">Avant</button>
-                            <button class="flipButton active" disabled>Après</button>
-                        </div>
-                        <img src="./images/c1.jpg" alt="" draggable="false">
-                        <img src="./images/dragon.jpg" alt="" draggable="false">
-                    </div>
-                    <div class="photosGroup">
-                        <img src="./images/c2.jpg" alt="" draggable="false">
-                        <img src="./images/c3.jpg" alt="" draggable="false"> 
-                    </div>
+                    <img src="./images/c2.jpg" alt="" draggable="false">
+                    <img src="./images/c3.jpg" alt="" draggable="false"> 
                 </div>
             </div>
         </main>
@@ -59,33 +49,6 @@
     </div>
 
     </body>
-
-    <script>
-        // Caroussel
-        let currentSlide = 0;
-        const slides = document.getElementById('carousel');
-        const totalSlides = slides.children.length+1;
-
-        function moveSlide(direction) {
-            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-            slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-        }
-
-
-        // Flip phone
-        const flipButtons = document.getElementsByClassName("flipButton")
-        for(let elem of flipButtons){
-            elem.addEventListener("click",()=>{
-                const otherButton = elem.previousElementSibling || elem.nextElementSibling
-                otherButton.classList.toggle("active")
-                elem.classList.toggle("active")
-
-                otherButton.removeAttribute("disabled")
-                elem.setAttribute("disabled","")
-
-                const frontImg = elem.parentElement.nextElementSibling
-                frontImg.classList.toggle("flipped")
-            })
-        }
-    </script>
+    <script src="./scripts/caroussel.js"></script>
+    <script src="scripts/flip.js"></script>
 </html>
