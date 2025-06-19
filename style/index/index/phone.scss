@@ -1,19 +1,5 @@
 @import '../caroussel';
 
-body{
-    height: 100vh;
-    height: 100dvh;
-    overflow: hidden;
-
-    #app{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-grow: 0;
-        flex-direction: column;
-    }
-}
-
 header{
     display: flex;
     flex-direction: column;
@@ -29,7 +15,7 @@ header{
 
     nav{
         flex: 1;
-        padding: 10px 8px 0 8px;
+        padding: 10px 8px;
         ul{
             display: flex;
             flex-direction: row;
@@ -39,11 +25,9 @@ header{
                 font-family: 'Lucida Sans';
                 font-size: calc(0.6rem + 0.9vw);
                 cursor: pointer;
-                &:nth-child(1){
-                    text-decoration: underline;
-                }
+            
                 &:hover{
-                    font-weight: bold;
+                    transform: scale(1.05);
                 }
             }
         }
@@ -99,4 +83,59 @@ main{
     }
 }
 
+@media (min-width: 768px) {
 
+    header{
+        flex-direction: row;
+        #logo{
+            object-position: initial;
+            height: auto;
+        }
+
+        nav{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+
+    main{
+        flex-direction: row;
+
+        h1{
+            display: inline;
+            text-align: center;
+        }
+        .mainCTA{
+            padding: 15px;
+            a{
+                text-wrap: nowrap;
+                margin: 0px;
+            }
+        }
+
+        .description{
+            justify-content: space-around;
+            width: 35%;
+        }
+
+        .photos{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(2,1fr);
+            gap: 5px;
+            padding-right: 8px;
+
+            :nth-child(1){
+                grid-row: 1/3;
+            }
+            
+            #carousel{
+                display: contents;
+            }
+        }
+        .arrow{
+            display: none;
+        }
+    }   
+}

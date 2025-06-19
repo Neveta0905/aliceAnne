@@ -1,4 +1,3 @@
-@import './index/responsive/style.css';
-@import './index/responsive/phone.css';
+@import './style.css';
+@import './index/index/phone.css';
 @import './index/flipCard/index.css';
-@import './index/responsive/tablet.css'
