@@ -1,0 +1,85 @@
+.photo {
+  display: flex;
+  position: relative;
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+}
+.photo img {
+  display: block;
+  object-fit: cover;
+}
+.photo__main {
+  width: 100%;
+  padding: 15px 10px;
+}
+.photo__label {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 8px 15px;
+  background-color: white;
+  border: solid 1px black;
+  font-size: calc(1rem + 0.5vw);
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+main {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.caroussel {
+  display: flex;
+  padding: 0px 8px;
+  gap: 10px;
+  transition: 2s;
+}
+.caroussel--visible {
+  overflow: hidden;
+}
+.caroussel__arrow {
+  font-size: 25px;
+  border-radius: 50%;
+  border: solid 3px var(--colorMain);
+  color: var(--colorMain);
+  padding: 5px;
+  aspect-ratio: 1;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+@media (max-width: 768px) {
+  .caroussel__arrow {
+    width: 0px;
+    padding: 0;
+    overflow: hidden;
+    border: none;
+  }
+}
+.caroussel__images {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  flex: 1;
+  transition: 500ms;
+}
+.caroussel .image__container {
+  min-width: 33%;
+}
+@media (max-width: 768px) {
+  .caroussel .image__container {
+    flex: 50%;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+}

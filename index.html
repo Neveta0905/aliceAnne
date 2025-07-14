@@ -5,10 +5,10 @@
         <meta charset="UTF-8">
         <meta name="description" content="Décoratrice d'intérieur sur dunkerque spécialisée dans le coaching, le home staging et le feng Shui.">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="./style/index.css">
+        <link rel="stylesheet" href="./style/css/main.css">
+        <link rel="stylesheet" href="./style/css/index.css">
     </head>
     <body>
-    <div id="app">
         <header>
             <a href="./index.html"><img src="./images/logo.jpg" alt="Logo" id="logo"></a>
             <nav>
@@ -29,11 +29,11 @@
                 <button class="mainCTA"><a href="mailto:latelierdecodalice@outlook.fr?subject=Un%20nouveau%20Projet&body=Bonjour%20Alice%20!!%0AVoici%20quelques%20photos%20de%20la%20pièce%20que%20j'aimerais%20rénover.%0AA Bientot !">Obtenir un devis</a></button>
             </div>
             <div class="photos">
-                <div class="arrow left" onclick="moveSlide(-1)">←</div>
-                <div class="arrow right" onclick="moveSlide(1)">→</div>
+                <button class="arrow arrow__left" onclick="moveSlide(-1)">←</button>
+                <button class="arrow arrow__right" onclick="moveSlide(1)">→</button>
 
-                <div id="carousel">
-                    <div class="photoCard">
+                <div id="caroussel">
+                    <div class="photoCard slide">
                         <div class="buttons">
                             <button class="flipButton">Avant</button>
                             <button class="flipButton active" disabled>Après</button>
@@ -41,14 +41,12 @@
                         <img src="./images/cuisineOxyAfter.jpg" alt="" draggable="false">
                         <img src="./images/cuisineOxyBefore.jpg" alt="" draggable="false">
                     </div>
-                    <img src="./images/c2.jpg" alt="" draggable="false">
-                    <img src="./images/c3.jpg" alt="" draggable="false"> 
+                    <img class="slide" src="./images/c2.jpg" alt="" draggable="false">
+                    <img class="slide" src="./images/c3.jpg" alt="" draggable="false"> 
                 </div>
             </div>
         </main>
         <footer></footer>
-    </div>
-
     </body>
     <script src="./scripts/caroussel.js"></script>
     <script src="scripts/flip.js"></script>

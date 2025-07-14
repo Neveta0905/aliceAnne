@@ -1,0 +1,176 @@
+.photoCard {
+  position: relative;
+}
+.photoCard .buttons {
+  user-select: none;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: rgba(240, 248, 255, 0.7);
+  z-index: 10000;
+}
+.photoCard .buttons button {
+  border: none;
+  font-size: 1.25rem;
+  padding: 6px;
+  cursor: pointer;
+  opacity: 0.3;
+  background: none;
+}
+.photoCard .buttons button:disabled {
+  cursor: default;
+}
+.photoCard .buttons .active {
+  background-color: #DBAD52;
+  opacity: 1;
+  color: white;
+}
+.photoCard img {
+  transition-duration: 0.6s;
+}
+.photoCard img:nth-of-type(1) {
+  z-index: 1000;
+}
+.photoCard img:nth-of-type(1).flipped {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}
+.photoCard img:nth-of-type(1).flipped + img {
+  transform: rotateY(0);
+}
+.photoCard img:nth-of-type(1) + img {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  transform: rotateY(180deg);
+  z-index: 0;
+  backface-visibility: hidden;
+  object-fit: cover;
+}
+
+body {
+  --colorMain:#DBAD52;
+  height: 100vh;
+  height: 100dvh;
+  width: 100dvw;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+main {
+  min-height: 0;
+  padding-bottom: 20px;
+  flex-direction: column;
+  flex: 1;
+}
+
+img {
+  max-height: 100%;
+}
+
+.mainCTA {
+  background-color: var(--colorMain);
+  width: 80%;
+  border: none;
+  font-size: 30px;
+  padding: 30px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+footer {
+  margin-top: auto;
+  height: 30px;
+  width: 100%;
+  background-color: var(--colorMain);
+  align-self: flex-end;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+h1 {
+  color: #DBAD52;
+}
+
+.active--link {
+  text-decoration: underline;
+}
+
+button {
+  all: unset;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+header #logo {
+  margin: auto;
+  width: 200.3px;
+  height: 65.4px;
+  object-fit: cover;
+  object-position: 0 -33px;
+}
+header nav {
+  flex: 1;
+  padding: 10px 8px;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header nav ul li {
+  font-family: "Lucida Sans";
+  font-size: calc(0.6rem + 0.9vw);
+  cursor: pointer;
+}
+header nav ul li:hover {
+  transform: scale(1.05);
+}
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+  header #logo {
+    object-position: initial;
+    height: auto;
+  }
+  header nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 25px;
+  }
+}

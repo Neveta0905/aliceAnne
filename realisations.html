@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Décoratrice d'intérieur sur dunkerque spécialisée dans le coaching, le home staging et le feng Shui.">
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/css/main.css">
+    <link rel="stylesheet" href="./style/css/realisations.css">
 </head>
 <body>
     <header>
@@ -19,7 +20,41 @@
         </nav>
     </header>
     <main>
+        <div class="photo">
+            <img src="./images/c1.jpg" alt="" class="photo__main">
+            <button class="photo__label">Découvrir les réalisations</button>
+        </div>
+        <div class="caroussel">
+            <button class="caroussel__arrow" onclick="moveSlide(-1)">←</button>
+            <div class="caroussel--visible">
+                <div class="caroussel__images caroussel__slide">
+                    <div class="image__container slide">
+                        <p class="image__title">Projet Oxy</p>
+                        <img src="./images/c1.jpg" alt="">
+                        <p>Clicker projet Oxy</p>
+                    </div>
+                    <div class="image__container slide">
+                        <p class="image__title">Projet Oxy</p>
+                        <img src="./images/c1.jpg" alt="">
+                        <p>Clicker projet Oxy</p>
+                    </div>
+                    <div class="image__container slide">
+                        <p class="image__title">Projet Oxy</p>
+                        <img src="./images/c3.jpg" alt="">
+                        <p>Clicker projet Oxy</p>
+                    </div>
+                    <div class="image__container slide">
+                        <p class="image__title">Projet Oxy</p>
+                        <img src="./images/c2.jpg" alt="">
+                        <p>Clicker projet Oxy</p>
+                    </div>
+                </div>
+            </div>
+            <button class="caroussel__arrow" onclick="moveSlide(1)">→</button>
+        </div>
     </main>
     <footer></footer>
 </body>
+<script src="./scripts/caroussel.js"></script>
+<script src="scripts/flip.js"></script>
 </html>

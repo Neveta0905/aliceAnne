@@ -1,0 +1,130 @@
+@use './flipCard.scss';
+
+body{
+    --colorMain:#DBAD52;
+    height: 100vh;
+    height: 100dvh;
+    width: 100dvw;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+}
+ul,ol {
+    list-style: none;
+    user-select: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main{
+    min-height: 0;
+    padding-bottom: 20px;
+    flex-direction: column;
+    flex: 1;
+}
+
+img{
+    max-height: 100%;
+}
+.mainCTA{
+    background-color: var(--colorMain);
+    width: 80%;
+    border: none;
+    font-size: 30px;
+    padding: 30px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+footer{
+    margin-top: auto;
+    height: 30px;
+    width: 100%;
+    background-color: var(--colorMain);
+    align-self: flex-end;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+h1{
+    color: #DBAD52;
+}
+
+.active{
+    &--link{
+        text-decoration: underline;
+    }
+}
+
+button{
+    all: unset;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+    #logo{
+        margin: auto;
+        width: 200.3px;
+        height: 65.4px;
+        object-fit: cover;
+        object-position: 0 -33px;
+    }
+
+    nav{
+        flex: 1;
+        padding: 10px 8px;
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            li{
+                font-family: 'Lucida Sans';
+                font-size: calc(0.6rem + 0.9vw);
+                cursor: pointer;
+            
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+        #logo{
+            object-position: initial;
+            height: auto;
+        }
+
+        nav{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 0px 25px;
+        }
+    }
+}
