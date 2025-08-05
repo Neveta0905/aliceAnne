@@ -1,4 +1,5 @@
 @use './flipCard.scss';
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); // font
 
 body{
     --colorMain:#DBAD52;
@@ -20,7 +21,7 @@ img{
 a{
     text-decoration: none;
     color: inherit;
-    background-color: inherit;
+    display:contents ;
 }
 ul,ol {
     list-style: none;
@@ -48,7 +49,7 @@ img{
     background-color: var(--colorMain);
     width: 80%;
     border: none;
-    font-size: 30px;
+    font-size: 25px;
     padding: 30px;
     color: white;
     cursor: pointer;
@@ -73,7 +74,8 @@ h1{
 
 .active{
     &--link{
-        text-decoration: underline;
+        font-weight: bold;
+        font-size: larger
     }
 }
 
@@ -102,7 +104,6 @@ header{
             justify-content: space-between;
 
             li{
-                font-family: 'Lucida Sans';
                 font-size: calc(0.6rem + 0.9vw);
                 cursor: pointer;
             
@@ -127,4 +128,12 @@ header{
             padding: 0px 25px;
         }
     }
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+  font-family: 'Poppins', sans-serif;
 }

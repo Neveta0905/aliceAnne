@@ -1,5 +1,5 @@
 let currentSlide = 0;
-let gap= 0
+let gap=0
 let currentSlidValue = 0
 const caroussel = document.getElementById('caroussel') || document.getElementsByClassName('caroussel__images')[0];
 const slideList = document.getElementsByClassName("slide")

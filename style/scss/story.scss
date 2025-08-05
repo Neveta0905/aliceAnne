@@ -3,16 +3,16 @@ main{
     flex-direction: column;
     text-align: center;
     justify-content: space-between;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     flex: 1;
 
     p{
-        font-size: 25px;
+        font-size: calc(18px + 0.1vw);
     }
 }
 
 .announcement{
-    padding: 20px 8px;
+    padding: 0px 8px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

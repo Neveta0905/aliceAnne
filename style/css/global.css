@@ -1,8 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .photoCard {
   position: relative;
 }
 .photoCard .buttons {
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   position: absolute;
   right: 15px;
   top: 15px;
@@ -46,7 +50,8 @@
   transform: rotateY(180deg);
   z-index: 0;
   backface-visibility: hidden;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
@@ -69,12 +74,14 @@ img {
 a {
   text-decoration: none;
   color: inherit;
-  background-color: inherit;
+  display: contents;
 }
 
 ul, ol {
   list-style: none;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 * {
@@ -99,7 +106,7 @@ img {
   background-color: var(--colorMain);
   width: 80%;
   border: none;
-  font-size: 30px;
+  font-size: 25px;
   padding: 30px;
   color: white;
   cursor: pointer;
@@ -123,7 +130,8 @@ h1 {
 }
 
 .active--link {
-  text-decoration: underline;
+  font-weight: bold;
+  font-size: larger;
 }
 
 button {
@@ -139,8 +147,10 @@ header #logo {
   margin: auto;
   width: 200.3px;
   height: 65.4px;
-  object-fit: cover;
-  object-position: 0 -33px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 -33px;
+     object-position: 0 -33px;
 }
 header nav {
   flex: 1;
@@ -152,7 +162,6 @@ header nav ul {
   justify-content: space-between;
 }
 header nav ul li {
-  font-family: "Lucida Sans";
   font-size: calc(0.6rem + 0.9vw);
   cursor: pointer;
 }
@@ -164,7 +173,8 @@ header nav ul li:hover {
     flex-direction: row;
   }
   header #logo {
-    object-position: initial;
+    -o-object-position: initial;
+       object-position: initial;
     height: auto;
   }
   header nav {
@@ -173,4 +183,12 @@ header nav ul li:hover {
     flex-direction: column;
     padding: 0px 25px;
   }
+}
+
+h1 {
+  font-family: "Great Vibes", cursive;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
 }

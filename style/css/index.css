@@ -8,7 +8,7 @@ main h1 {
   display: none;
 }
 main .description {
-  font-size: calc(1rem + 1.2vw);
+  font-size: calc(1rem + 0.5vw);
   margin-top: 15px;
   display: flex;
   flex-direction: column;
@@ -18,12 +18,13 @@ main .description .presentation {
   text-align: center;
 }
 main .description button {
-  margin-top: 15px;
+  margin-top: 5px;
   margin-left: auto;
   margin-right: auto;
 }
 main .photos {
   margin-top: 15px;
+  min-height: 0;
 }
 main .photos #caroussel {
   display: flex;
@@ -33,8 +34,10 @@ main .photos .photosGroup {
   display: contents;
 }
 main .photos img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   flex-shrink: 0;
+  width: 100%;
 }
 main .photos .photoCard {
   flex-shrink: 0;

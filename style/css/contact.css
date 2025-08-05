@@ -2,3 +2,32 @@ main {
   display: flex;
   flex-direction: row;
 }
+
+h1 {
+  margin: auto;
+  font-size: 40px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+section .social-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+  gap: 10px;
+}
+section .social-list li {
+  display: flex;
+  margin: auto auto;
+  align-items: center;
+}
+section .social-list__item img {
+  width: 40px;
+  height: auto;
+  margin-right: 8px;
+}

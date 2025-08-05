@@ -2,7 +2,9 @@
   position: relative;
 }
 .photoCard .buttons {
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   position: absolute;
   right: 15px;
   top: 15px;
@@ -46,5 +48,6 @@
   transform: rotateY(180deg);
   z-index: 0;
   backface-visibility: hidden;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

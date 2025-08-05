@@ -13,19 +13,22 @@
         width: 100%;
         padding: 15px 10px;
     }
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
     &__label{
         position: absolute;
-        top: 85%;
+        top: 80%;
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 8px 15px;
-        background-color: white;
-        border: solid 1px black;
+        background-color: #2C2C2C;
         font-size: calc(1rem + 0.5vw);
         text-align: center;
         white-space: nowrap;
         cursor: pointer;
+        font-family: 'Great Vibes', cursive;
+        font-size: 23px;
+        color: var(--colorMain);
     }
 
     

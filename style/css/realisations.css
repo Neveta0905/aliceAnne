@@ -4,10 +4,12 @@
   width: 100%;
   flex: 1;
   min-height: 0;
+  @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 }
 .photo img {
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .photo__main {
   width: 100%;
@@ -15,16 +17,18 @@
 }
 .photo__label {
   position: absolute;
-  top: 85%;
+  top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 8px 15px;
-  background-color: white;
-  border: solid 1px black;
+  background-color: #2C2C2C;
   font-size: calc(1rem + 0.5vw);
   text-align: center;
   white-space: nowrap;
   cursor: pointer;
+  font-family: "Great Vibes", cursive;
+  font-size: 23px;
+  color: var(--colorMain);
 }
 
 main {
@@ -56,7 +60,9 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media (max-width: 768px) {
   .caroussel__arrow {
