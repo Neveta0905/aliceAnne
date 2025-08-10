@@ -8,7 +8,6 @@
   position: absolute;
   right: 15px;
   top: 15px;
-  background-color: rgba(240, 248, 255, 0.7);
   z-index: 10000;
 }
 .photoCard .buttons button {
@@ -23,7 +22,7 @@
   cursor: default;
 }
 .photoCard .buttons .active {
-  background-color: #DBAD52;
+  background-color: var(--colorMain);
   opacity: 1;
   color: white;
 }
@@ -48,6 +47,5 @@
   transform: rotateY(180deg);
   z-index: 0;
   backface-visibility: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }

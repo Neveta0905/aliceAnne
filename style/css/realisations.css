@@ -21,7 +21,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 8px 15px;
-  background-color: #2C2C2C;
+  background-color: var(--labels);
   font-size: calc(1rem + 0.5vw);
   text-align: center;
   white-space: nowrap;
@@ -35,7 +35,6 @@ main {
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
 }
 
 .caroussel {

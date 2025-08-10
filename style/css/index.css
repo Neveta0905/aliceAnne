@@ -1,5 +1,5 @@
 main {
-  overflow: 4444;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   flex: 1;
