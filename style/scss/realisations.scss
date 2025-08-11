@@ -13,7 +13,6 @@
         width: 100%;
         padding: 15px 10px;
     }
-    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
     &__label{
         position: absolute;
@@ -36,8 +35,6 @@
 
 main{
     overflow-y: scroll;
-    display: flex;
-    flex-direction: column;
 }
 
 .caroussel{

@@ -4,12 +4,10 @@
   width: 100%;
   flex: 1;
   min-height: 0;
-  @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
 }
 .photo img {
   display: block;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .photo__main {
   width: 100%;
@@ -33,8 +31,6 @@
 
 main {
   overflow-y: scroll;
-  display: flex;
-  flex-direction: column;
 }
 
 .caroussel {
@@ -59,9 +55,7 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 @media (max-width: 768px) {
   .caroussel__arrow {

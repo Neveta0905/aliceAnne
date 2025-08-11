@@ -1,6 +1,4 @@
 main {
-  display: flex;
-  flex-direction: column;
   text-align: center;
   justify-content: space-between;
   padding-bottom: 0px;
@@ -12,8 +10,6 @@ main p {
 
 .announcement {
   padding: 0px 8px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-around;
   flex: 1;
 }
@@ -22,6 +18,5 @@ main p {
   justify-self: end;
   width: 100%;
   height: 20%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }

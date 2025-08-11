@@ -1,19 +1,25 @@
 @use './flipCard.scss';
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); // font
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root{
     --colorMain:#DBAD52;
     --labels:#2C2C2C;
     --arrows:rgba(31, 24, 1,0.8);
 }
+
 body{
     height: 100vh;
     height: 100dvh;
     width: 100dvw;
     width: 100vw;
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    //display: flex;
+    //flex-direction: column;
+}
+
+h1,h2,h3 {
+    font-family: 'Great Vibes', cursive;
 }
 
 img{
@@ -27,6 +33,7 @@ a{
     color: inherit;
     display:contents ;
 }
+
 ul,ol {
     list-style: none;
     user-select: none;
@@ -36,6 +43,7 @@ ul,ol {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 main{
@@ -48,6 +56,7 @@ main{
 img{
     max-height: 100%;
 }
+
 .mainCTA{
     background-color: var(--colorMain);
     width: 80%;
@@ -85,6 +94,7 @@ h1{
 button{
     all: unset;
 }
+
 header{
     display: flex;
     flex-direction: column;
@@ -133,10 +143,13 @@ header{
     }
 }
 
-h1 {
-    font-family: 'Great Vibes', cursive;
+.flex-col{
+    display: flex;
+    flex-direction: column;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-* {
-  font-family: 'Poppins', sans-serif;
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

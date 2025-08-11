@@ -1,14 +1,17 @@
 .photoCard{
     position: relative;
-
+    
     .buttons{
+        background-color: white;
         user-select: none;
         position: absolute;
         right: 15px;
         top:15px;
         z-index: 10000;
+        border-radius: 0.3em;
         
         button{
+            
             border: none;
             font-size: 1.25rem;
             padding: 6px;
@@ -22,6 +25,7 @@
         }
         
         .active{
+            border-radius: 0.3em;
             background-color: var(--colorMain);
             opacity: 1;
             color: white;

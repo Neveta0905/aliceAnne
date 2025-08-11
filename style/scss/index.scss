@@ -1,8 +1,7 @@
 main{
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
     flex: 1;
+
     h1{
         display: none;
     }
@@ -10,8 +9,6 @@ main{
     .description{
         font-size: calc(1rem + 0.5vw);
         margin-top: 15px;
-        display: flex;
-        flex-direction: column;
 
         .presentation{
             padding: 8px;
@@ -27,6 +24,7 @@ main{
     .photos{
         margin-top: 15px;
         min-height: 0;
+        
         
         #caroussel{
             display: flex;

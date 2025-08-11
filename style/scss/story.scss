@@ -1,6 +1,4 @@
 main{
-    display: flex;
-    flex-direction: column;
     text-align: center;
     justify-content: space-between;
     padding-bottom: 0px;
@@ -13,8 +11,6 @@ main{
 
 .announcement{
     padding: 0px 8px;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
     flex: 1;
 }

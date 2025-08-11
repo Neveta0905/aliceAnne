@@ -3,9 +3,7 @@
   position: absolute;
   cursor: pointer;
   z-index: 999;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
   background-color: rgba(255, 255, 255, 0.7);
   color: var(--arrows);
   border-radius: 9999px;

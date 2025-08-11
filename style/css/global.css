@@ -4,14 +4,13 @@
   position: relative;
 }
 .photoCard .buttons {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  background-color: white;
+  user-select: none;
   position: absolute;
   right: 15px;
   top: 15px;
-  background-color: rgba(240, 248, 255, 0.7);
   z-index: 10000;
+  border-radius: 0.3em;
 }
 .photoCard .buttons button {
   border: none;
@@ -25,6 +24,7 @@
   cursor: default;
 }
 .photoCard .buttons .active {
+  border-radius: 0.3em;
   background-color: var(--colorMain);
   opacity: 1;
   color: white;
@@ -50,8 +50,7 @@
   transform: rotateY(180deg);
   z-index: 0;
   backface-visibility: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 :root {
@@ -66,8 +65,10 @@ body {
   width: 100dvw;
   width: 100vw;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: "Great Vibes", cursive;
 }
 
 img {
@@ -84,15 +85,14 @@ a {
 
 ul, ol {
   list-style: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 main {
@@ -151,10 +151,8 @@ header #logo {
   margin: auto;
   width: 200.3px;
   height: 65.4px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 0 -33px;
-     object-position: 0 -33px;
+  object-fit: cover;
+  object-position: 0 -33px;
 }
 header nav {
   flex: 1;
@@ -177,8 +175,7 @@ header nav ul li:hover {
     flex-direction: row;
   }
   header #logo {
-    -o-object-position: initial;
-       object-position: initial;
+    object-position: initial;
     height: auto;
   }
   header nav {
@@ -189,10 +186,13 @@ header nav ul li:hover {
   }
 }
 
-h1 {
-  font-family: "Great Vibes", cursive;
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
-* {
-  font-family: "Poppins", sans-serif;
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

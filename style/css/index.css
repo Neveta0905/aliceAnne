@@ -1,7 +1,5 @@
 main {
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
   flex: 1;
 }
 main h1 {
@@ -10,8 +8,6 @@ main h1 {
 main .description {
   font-size: calc(1rem + 0.5vw);
   margin-top: 15px;
-  display: flex;
-  flex-direction: column;
 }
 main .description .presentation {
   padding: 8px;
@@ -34,8 +30,7 @@ main .photos .photosGroup {
   display: contents;
 }
 main .photos img {
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   flex-shrink: 0;
   width: 100%;
 }

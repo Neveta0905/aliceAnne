@@ -2,13 +2,13 @@
   position: relative;
 }
 .photoCard .buttons {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  background-color: white;
+  user-select: none;
   position: absolute;
   right: 15px;
   top: 15px;
   z-index: 10000;
+  border-radius: 0.3em;
 }
 .photoCard .buttons button {
   border: none;
@@ -22,6 +22,7 @@
   cursor: default;
 }
 .photoCard .buttons .active {
+  border-radius: 0.3em;
   background-color: var(--colorMain);
   opacity: 1;
   color: white;
